@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzLRPDAk78bAr8lk1Jn7ZuAYTYLvXYKC8&callback=initMap&v=weekly"
+      async
+      defer
+    ></script> -->
+    <title>Google Maps</title>
+  </head>
+  <body class="min-h-screen bg-gray-900 text-white pt-10">
+    <header class="text-center">
+      <h1 class="text-3xl font-bold">Hello, World!🌍</h1>
+      <a
+        href="https://developers.google.com/maps"
+        target="_blank"
+        class="text-xl underline decoration-wavy decoration-sky-500 underline-offset-2 [text-decoration-skip-ink:none]"
+        >Google Maps</a
+      >
+    </header>
+
+    <!-- Static Map * Requires billing account -->
+
+    <!-- <div>
+      <img
+        src="https://maps.googleapis.com/maps/api/staticmap?center=51.477222,0&zoom=14&size=400x400&key=AIzaSyDzLRPDAk78bAr8lk1Jn7ZuAYTYLvXYKC8"
+        alt=""
+      />
+    </div> -->
+
+    <!-- Maps Embeded in iframe (Free) -->
+    <!-- Generator https://developers.google.com/maps/documentation/embed/map-generator#generating_an_iframe -->
+
+    <div class="flex flex-wrap gap-10 justify-center">
+      <div>
+        <h2 class="text-xl font-bold text-center mb-4">Destination</h2>
+        <iframe
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJ-y4FdhQFWBQRzEKx0sv-UpQ&destination=place_id:ChIJHUesH4JbWBQRPSQmJOVxVeo&key=AIzaSyDzLRPDAk78bAr8lk1Jn7ZuAYTYLvXYKC8"
+        ></iframe>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-bold text-center mb-4">Highlight Place</h2>
+        <iframe
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-y4FdhQFWBQRzEKx0sv-UpQ&key=AIzaSyDzLRPDAk78bAr8lk1Jn7ZuAYTYLvXYKC8"
+        ></iframe>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-bold text-center mb-4">Just a map</h2>
+        <iframe
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/view?zoom=17&center=30.2458,31.4723&key=AIzaSyDzLRPDAk78bAr8lk1Jn7ZuAYTYLvXYKC8"
+        ></iframe>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-bold text-center mb-4">
+          Just a map with "maptype=satellite"
+        </h2>
+        <iframe
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDzLRPDAk78bAr8lk1Jn7ZuAYTYLvXYKC8&center=30.245187,31.4706298&zoom=18&maptype=satellite"
+        ></iframe>
+      </div>
+    </div>
+
+    <div id="map" class="mt-10 h-screen"></div>
+    <script src="/index.js" type="module"></script>
+    <!-- <script>
+      let map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: -34.397, lng: 150.644 },
+          zoom: 8,
+        });
+      }
+
+      initMap();
+      console.log(map);
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./index.html"
+  },
+  "author": "Momen Sherif",
+  "license": "ISC",
+  "dependencies": {
+    "@googlemaps/map-loader": "^0.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.0"
+  }
+}
